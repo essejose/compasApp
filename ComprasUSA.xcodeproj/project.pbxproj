@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		82F30F331F9148400091F103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F321F9148400091F103 /* AppDelegate.swift */; };
-		82F30F351F9148400091F103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F341F9148400091F103 /* ViewController.swift */; };
 		82F30F381F9148400091F103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F30F361F9148400091F103 /* Main.storyboard */; };
 		82F30F3A1F9148400091F103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F30F391F9148400091F103 /* Assets.xcassets */; };
 		82F30F3D1F9148400091F103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F30F3B1F9148400091F103 /* LaunchScreen.storyboard */; };
+		82F30F621F945A700091F103 /* ListaComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F5F1F945A700091F103 /* ListaComprasViewController.swift */; };
+		82F30F631F945A710091F103 /* ProdutoRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F601F945A700091F103 /* ProdutoRegisterViewController.swift */; };
+		82F30F641F945A710091F103 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F611F945A700091F103 /* UIViewController+CoreData.swift */; };
+		82F30F671F945A830091F103 /* addOns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F651F945A830091F103 /* addOns.swift */; };
+		82F30F681F945A830091F103 /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F661F945A830091F103 /* AjustesViewController.swift */; };
+		82F30F731F945DBC0091F103 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82F30F711F945DBC0091F103 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82F30F2F1F91483F0091F103 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F30F321F9148400091F103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82F30F341F9148400091F103 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82F30F371F9148400091F103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82F30F391F9148400091F103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82F30F3C1F9148400091F103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82F30F3E1F9148400091F103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F30F5F1F945A700091F103 /* ListaComprasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaComprasViewController.swift; sourceTree = "<group>"; };
+		82F30F601F945A700091F103 /* ProdutoRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutoRegisterViewController.swift; sourceTree = "<group>"; };
+		82F30F611F945A700091F103 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
+		82F30F651F945A830091F103 /* addOns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addOns.swift; sourceTree = "<group>"; };
+		82F30F661F945A830091F103 /* AjustesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
+		82F30F721F945DBC0091F103 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		82F30F311F91483F0091F103 /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
+				82F30F6D1F945B4E0091F103 /* TotalCompras */,
+				82F30F6C1F945B3C0091F103 /* Ajustes */,
+				82F30F6B1F945B1F0091F103 /* ListaProdutos */,
+				82F30F6A1F945B170091F103 /* Produto */,
+				82F30F691F945B0A0091F103 /* Extension */,
 				82F30F321F9148400091F103 /* AppDelegate.swift */,
-				82F30F341F9148400091F103 /* ViewController.swift */,
 				82F30F361F9148400091F103 /* Main.storyboard */,
 				82F30F391F9148400091F103 /* Assets.xcassets */,
 				82F30F3B1F9148400091F103 /* LaunchScreen.storyboard */,
 				82F30F3E1F9148400091F103 /* Info.plist */,
+				82F30F711F945DBC0091F103 /* DataModel.xcdatamodeld */,
 			);
 			path = ComprasUSA;
+			sourceTree = "<group>";
+		};
+		82F30F691F945B0A0091F103 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82F30F611F945A700091F103 /* UIViewController+CoreData.swift */,
+				82F30F651F945A830091F103 /* addOns.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		82F30F6A1F945B170091F103 /* Produto */ = {
+			isa = PBXGroup;
+			children = (
+				82F30F601F945A700091F103 /* ProdutoRegisterViewController.swift */,
+			);
+			name = Produto;
+			sourceTree = "<group>";
+		};
+		82F30F6B1F945B1F0091F103 /* ListaProdutos */ = {
+			isa = PBXGroup;
+			children = (
+				82F30F5F1F945A700091F103 /* ListaComprasViewController.swift */,
+			);
+			name = ListaProdutos;
+			sourceTree = "<group>";
+		};
+		82F30F6C1F945B3C0091F103 /* Ajustes */ = {
+			isa = PBXGroup;
+			children = (
+				82F30F661F945A830091F103 /* AjustesViewController.swift */,
+			);
+			name = Ajustes;
+			sourceTree = "<group>";
+		};
+		82F30F6D1F945B4E0091F103 /* TotalCompras */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TotalCompras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F30F351F9148400091F103 /* ViewController.swift in Sources */,
+				82F30F681F945A830091F103 /* AjustesViewController.swift in Sources */,
+				82F30F641F945A710091F103 /* UIViewController+CoreData.swift in Sources */,
+				82F30F621F945A700091F103 /* ListaComprasViewController.swift in Sources */,
+				82F30F731F945DBC0091F103 /* DataModel.xcdatamodeld in Sources */,
 				82F30F331F9148400091F103 /* AppDelegate.swift in Sources */,
+				82F30F671F945A830091F103 /* addOns.swift in Sources */,
+				82F30F631F945A710091F103 /* ProdutoRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +359,22 @@
 				82F30F431F9148400091F103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82F30F711F945DBC0091F103 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82F30F721F945DBC0091F103 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 82F30F721F945DBC0091F103 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 82F30F271F91483F0091F103 /* Project object */;
 }
