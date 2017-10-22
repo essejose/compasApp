@@ -38,7 +38,7 @@ class TotalComprasViewController: UIViewController {
             try dataSource = context.fetch(fetchRequest)
             setLabels()
         } catch {
-            print("erro")
+            print("deu ruim")
         }
     }
     
