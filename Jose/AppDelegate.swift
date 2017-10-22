@@ -18,8 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         var defaultsSettings = [String: Any]()
         defaultsSettings["dolar"] = 3.2
-        defaultsSettings["iof"] = 1.3
+        defaultsSettings["iof"] = 6.38
+        defaultsSettings["EstadosPadroes"] = true
+        defaultsSettings["California"] = 7.0
+        defaultsSettings["New York"] = 5.0
+        defaultsSettings["Texas"] = 11.0
+        
+        
         UserDefaults.standard.register(defaults: defaultsSettings)
+        
+        
         
         // Override point for customization after application launch.
         return true

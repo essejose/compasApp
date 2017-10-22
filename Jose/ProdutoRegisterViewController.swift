@@ -171,10 +171,10 @@ extension ProdutoRegisterViewController {
         fetchRequest.sortDescriptors = [sortDescriptor]
         do {
             try dataSource = context.fetch(fetchRequest)
-            print(dataSource.count)
+           
             pickerView.reloadAllComponents()
         } catch {
-            print("erro")
+            print("Deu ruim")
         }
     }
     

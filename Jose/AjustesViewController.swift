@@ -24,12 +24,13 @@ class AjustesViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.delegate = self
+        
         tableView.dataSource = self
         helpToolBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         loadImposto()
     }
     
@@ -47,10 +48,11 @@ class AjustesViewController: UIViewController {
 //MARK: - Methods
 extension AjustesViewController {
     func loadImposto() {
+        
         if let dolar = UserDefaults.standard.string(
             forKey: "dolar"){
             tfDolar.text = dolar
-            print(dolar)
+        
         }
         if let iof = UserDefaults.standard.string(forKey: "iof"){
             tfIOF.text = iof
@@ -61,10 +63,49 @@ extension AjustesViewController {
         return true
     }
     
-    func loadEstados() {
-        validateListProdutos(true)
+    func hasDefaultEstados(){
+       
+        if let loadEstadosFirst = UserDefaults.standard.string(
+            forKey: "EstadosPadroes"){
+            
+            if loadEstadosFirst.toBool()!{
+                
+                let defaultEstados :[String:Double] = [
+                    
+                    "California" : UserDefaults.standard.double(forKey: "California"),
+                    "New York"   : UserDefaults.standard.double(forKey: "New York"),
+                    "Texas"      : UserDefaults.standard.double(forKey: "Texas")
+                ]
+                
+                    for defaultEstado  in defaultEstados{
+                        
+                        let estado = Estado(context: self.context)
+                        estado.nome = defaultEstado.0
+                        estado.imposto = defaultEstado.1
+                        
+                        do {
+                            try self.context.save()
+                        } catch {
+                        
+                    }
+                
+                }
+                
+                UserDefaults.standard.set(String(false), forKey: "EstadosPadroes")
+                
+            }
+        }
         
+    }
+    
+    func loadEstados() {
+        
+        
+        validateListProdutos(true)
         dataSource.removeAll()
+        hasDefaultEstados()
+        
+        
         
         let fetchRequest: NSFetchRequest<Estado> = Estado.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "nome", ascending: true)
@@ -127,10 +168,12 @@ extension AjustesViewController {
         }
         
         let okAction = UIAlertAction(title: "Salvar", style: .default) { (action) in
-            if self.alertValidate(alert.textFields![0].text!,alert.textFields![1].text!) {
+            if self.alertValidate(alert.textFields![0].text!,
+                                  alert.textFields![1].text!) {
+                
                 item.nome = alert.textFields![0].text
-                if let taxState = Double(alert.textFields![1].text!.replacingOccurrences(of: ",", with: ".")) {
-                    item.imposto = taxState
+                if let impostoEstado = Double(alert.textFields![1].text!.replacingOccurrences(of: ",", with: ".")) {
+                    item.imposto = impostoEstado
                     do {
                         try self.context.save()
                         self.loadEstados()
@@ -163,10 +206,10 @@ extension AjustesViewController {
         
         let okAction = UIAlertAction(title: "Salvar", style: .default) { (action) in
             if self.alertValidate(alert.textFields![0].text!,alert.textFields![1].text!.replacingOccurrences(of: ",", with: ".")) {
-                let state = Estado(context: self.context)
-                state.nome = alert.textFields![0].text
-                if let taxState = Double(alert.textFields![1].text!.replacingOccurrences(of: ",", with: ".")) {
-                    state.imposto = taxState
+                let estado = Estado(context: self.context)
+                estado.nome = alert.textFields![0].text
+                if let impostoEstado = Double(alert.textFields![1].text!.replacingOccurrences(of: ",", with: ".")) {
+                    estado.imposto = impostoEstado
                     do {
                         try self.context.save()
                         self.loadEstados()
@@ -212,6 +255,7 @@ extension AjustesViewController {
     }
     
     func editTaxTotal() {
+        
         if tfDolar.isFirstResponder {
             if let dolar = Double((tfDolar.text?.replacingOccurrences(of: ",", with: "."))!) {
                 UserDefaults.standard.set(String(dolar), forKey:"dolar")

@@ -13,7 +13,7 @@
         <!--Lista de Compras-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListaComprasViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListaComprasViewController" customModule="jose" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k5R-Cf-hov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,7 +84,7 @@
         <!--Total-->
         <scene sceneID="WB1-5O-cla">
             <objects>
-                <viewController id="Jgp-jb-ULt" customClass="TotalComprasViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jgp-jb-ULt" customClass="TotalComprasViewController" customModule="jose" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X2y-oi-faF"/>
                         <viewControllerLayoutGuide type="bottom" id="OBF-hf-SzR"/>
@@ -100,21 +100,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18454,45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6T-ln-DPo">
-                                <rect key="frame" x="16" y="86" width="343" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" red="1" green="0.79187096450000005" blue="0.41166178040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="86" width="343" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.12384010811714641" blue="0.11425842453165236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em R$:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-tY-7GH">
-                                <rect key="frame" x="16" y="162" width="343" height="21"/>
+                                <rect key="frame" x="16" y="163" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.03485737404" blue="0.052198024609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18454,45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmh-OZ-env">
-                                <rect key="frame" x="16" y="193" width="343" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="1" green="0.17608347329999999" blue="0.18992320660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="194" width="343" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.11021055372240017" green="0.75628569162436543" blue="0.19360565671761371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -166,7 +166,7 @@
         <!--Cadastrar Produto-->
         <scene sceneID="ac6-ax-8Oh">
             <objects>
-                <viewController id="lRa-GU-Ezw" customClass="ProdutoRegisterViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lRa-GU-Ezw" customClass="ProdutoRegisterViewController" customModule="jose" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6uv-I4-vI7"/>
                         <viewControllerLayoutGuide type="bottom" id="Io9-5K-qcg"/>
@@ -325,7 +325,7 @@
         <!--Ajustes-->
         <scene sceneID="Tge-yj-9DH">
             <objects>
-                <viewController id="NfI-Uy-Vfp" customClass="AjustesViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NfI-Uy-Vfp" customClass="AjustesViewController" customModule="jose" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DxN-Ov-GqN"/>
                         <viewControllerLayoutGuide type="bottom" id="S6d-JJ-7nZ"/>
@@ -355,17 +355,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ITF-o2-niU">
-                                                    <rect key="frame" x="15" y="7" width="60.5" height="30"/>
+                                                    <rect key="frame" x="15" y="10" width="49" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="preco" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SWR-Ym-Nmc">
-                                                    <rect key="frame" x="316" y="15" width="44" height="20.5"/>
+                                                    <rect key="frame" x="316" y="13" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <color key="textColor" red="1" green="0.44149256635448408" blue="0.2321391649201211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="0.1240828186285865" blue="0.10857605662913083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -423,13 +423,13 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-I7-fJg">
-                                <rect key="frame" x="186" y="571" width="173" height="39"/>
+                                <rect key="frame" x="206" y="571" width="153" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="mcr-hv-ayf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Adicionar novo Estado">
-                                    <color key="titleColor" red="0.022246651860000001" green="0.74161246830000005" blue="0.18931511740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.23676643547123311" green="0.70229829104921571" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addNewState:" destination="NfI-Uy-Vfp" eventType="touchUpInside" id="h3S-Q7-m6I"/>

@@ -144,7 +144,7 @@ extension ListaComprasViewController {
                 validateList(true)
             }
         } catch {
-            print("erro")
+            print("Deu ruim")
         }
     }
 }
