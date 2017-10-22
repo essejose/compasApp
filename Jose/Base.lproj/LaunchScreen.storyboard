@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TamilSangamMN.ttc">
+            <string>TamilSangamMN</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registre suas compras e boa viagem!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX1-Sf-ydb">
+                                <rect key="frame" x="24" y="106" width="327" height="14"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                <color key="textColor" red="0.47540950159762219" green="0.58019923580294319" blue="0.59384914340101524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-wD-ex3">
+                                <rect key="frame" x="24" y="60" width="327" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Compras">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="TamilSangamMN"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="U">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="0.52501605308219179" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="36" name="TamilSangamMN"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="S">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="TamilSangamMN"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="A">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="TamilSangamMN"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13mob Jose 34095" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1m-v9-9OV">
+                                <rect key="frame" x="241.5" y="632.5" width="109.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullImg" translatesAutoresizingMaskIntoConstraints="NO" id="HaK-il-ceV">
+                                <rect key="frame" x="40" y="170" width="294" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="xvC-wS-Et8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4pf-wD-ex3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="40" id="3jk-Sh-6Ah"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4pf-wD-ex3" secondAttribute="trailing" constant="8" id="4Wd-ee-a9m"/>
+                            <constraint firstItem="HaK-il-ceV" firstAttribute="centerX" secondItem="LX1-Sf-ydb" secondAttribute="centerX" id="53k-cu-gMB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a1m-v9-9OV" secondAttribute="bottom" constant="20" id="5RP-r8-gk4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a1m-v9-9OV" secondAttribute="trailing" constant="8" id="NXX-4Y-TYD"/>
+                            <constraint firstItem="LX1-Sf-ydb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="ROE-Tq-cwU"/>
+                            <constraint firstItem="HaK-il-ceV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="f3U-7Q-RMO"/>
+                            <constraint firstItem="HaK-il-ceV" firstAttribute="top" secondItem="LX1-Sf-ydb" secondAttribute="bottom" constant="50" id="j4J-0n-Mfr"/>
+                            <constraint firstItem="4pf-wD-ex3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="kxX-oF-lWe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LX1-Sf-ydb" secondAttribute="trailing" constant="8" id="o8k-oT-c5F"/>
+                            <constraint firstItem="LX1-Sf-ydb" firstAttribute="top" secondItem="4pf-wD-ex3" secondAttribute="bottom" constant="10" id="vzb-HH-9A6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fullImg" width="512" height="512"/>
+    </resources>
+</document>
